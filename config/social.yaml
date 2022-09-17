@@ -31,7 +31,7 @@ spallasx_controller:
         module: joint_position_controller
         type: JointPositionController
     joint_name: spallasx_joint
-    joint_speed: 0.17
+    joint_speed: 1
     motor:
         id: 3
         init: 0
@@ -44,7 +44,7 @@ spallasxj_controller:
         module: joint_position_controller
         type: JointPositionController
     joint_name: spallasxj_joint
-    joint_speed: 0.17
+    joint_speed: 1
     motor:
         id: 4
         init: 0
@@ -57,7 +57,7 @@ spalladx_controller:
         module: joint_position_controller
         type: JointPositionController
     joint_name: spalladx_joint
-    joint_speed: 0.17
+    joint_speed: 1
     motor:
         id: 6
         init: 0
@@ -70,7 +70,7 @@ spalladxj_controller:
         module: joint_position_controller
         type: JointPositionController
     joint_name: spallasxj_joint
-    joint_speed: 0.17
+    joint_speed: 1
     motor:
         id: 7
         init: 0
@@ -84,7 +84,7 @@ gomitodx_controller:
         module: joint_position_controller
         type: JointPositionController
     joint_name: gomitodx_joint
-    joint_speed: 0.17
+    joint_speed: 1
     motor:
         id: 8
         init: 0
@@ -97,7 +97,7 @@ gomitosx_controller:
         module: joint_position_controller
         type: JointPositionController
     joint_name: gomitosx_joint
-    joint_speed: 0.17
+    joint_speed: 1
     motor:
         id: 5
         init: 0
