@@ -16,6 +16,8 @@
 		spalladx_controller
 		spalladxj_controller
 		gomitodx_controller
-		gomitosx_controller"
+		gomitosx_controller
+            handdx_controller
+            handsx_controller"
           output="screen"/>
 </launch>
