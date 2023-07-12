@@ -17,7 +17,7 @@
 <!-- This will launch the Dynamixel pan controller -->
 
   <include file="$(find face_tracker_control)/launch/start_social_controllerv2.launch"/> 
-  <node name="torque_control" pkg="dynamixel_workbench_controllers" type="torque_control" required="true" output="screen"/>
+  
 
 
 </launch>
