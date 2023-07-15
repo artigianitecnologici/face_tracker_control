@@ -56,7 +56,7 @@ spalladx_controller:
         package: dynamixel_controllers
         module: joint_position_controller
         type: JointPositionController
-        joint_name: spalladx_joint
+    joint_name: spalladx_joint
     joint_speed: 1
     motor:
         id: 3
