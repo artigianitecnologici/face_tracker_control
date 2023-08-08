@@ -54,6 +54,7 @@ Optimum range = -0.5 to 0.5
 
 int servomaxx, servomaxy, servomin,screenmaxx, screenmaxy,center_offset,center_offsety, center_left, center_right, center_up, center_down;
 float servo_step_distancex, current_pos_x, servo_step_distancey, current_pos_y;
+float servo_x_distance, servo_y_distance,step_x
 
 std_msgs::Float64 initial_pose;
 std_msgs::Float64 current_pose;
@@ -70,8 +71,21 @@ void track_face(int x,int y)
     if(x < (center_left)){
 
 		////ROS_INFO("Face is at Left");
-        
-		current_pos_x += servo_step_distancex;
+        servo_x_distance = center_left-x;
+		if (servo_x_distance > 30) {
+			step_x = servo_x_distance / 100;
+			if step_x > 1 {    
+               step_x = 1
+			}
+		   	current_pos_x += step_x; 
+
+		} else {
+        	current_pos_x += servo_step_distancex; 
+		}
+		
+		// (vf-vi)/t
+
+		
 		current_pose.data = current_pos_x;
 		//ROS_INFO("servo controller current_position = %f",current_pos_x);
 
@@ -84,8 +98,19 @@ void track_face(int x,int y)
     else if(x > center_right){
 
 	//ROS_INFO("Face is at Right");
+		servo_x_distance = x-center_right;
+		if (servo_x_distance > 30) {
+			step_x = servo_x_distance / 100;
+			if step_x > 1 {    
+               step_x = 1
+			}
+		   	current_pos_x -= step_x; 
 
-	current_pos_x -= servo_step_distancex;
+		} else {
+        	current_pos_x -= servo_step_distancex; 
+		}
+
+	//current_pos_x -= servo_step_distancex;
 	current_pose.data = current_pos_x;
 
 	//ROS_INFO("servo controller current_position = %f",current_pos_x);
