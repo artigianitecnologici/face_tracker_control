@@ -50,7 +50,7 @@ Optimum range = -0.5 to 0.5
 
 #include "face_tracker_pkg/centroid.h"
 
-//Tracker parameters
+//Tracker parameters 
 
 int servomaxx, servomaxy, servomin,screenmaxx, screenmaxy,center_offset,center_offsety, center_left, center_right, center_up, center_down;
 float servo_step_distancex, current_pos_x, servo_step_distancey, current_pos_y;
