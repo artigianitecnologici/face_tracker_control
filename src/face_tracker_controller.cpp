@@ -65,7 +65,7 @@ ros::Publisher dynamixel_control_tilt;
 void track_face(int x,int y) 
 {
 	
-	ROS_INFO"Servo x = %f cur pos l %f  r %f",x ,center_left,center_right)
+	//ROS_INFO"Servo x = %f cur pos l %f  r %f",x ,center_left,center_right)
     //Find out if the X component of the face is to the left of the middle of the screen.
     if(x < (center_left)){
 
